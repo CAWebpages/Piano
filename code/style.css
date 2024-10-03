@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Classes */
+.medium-rounded {
+  border-radius: 12px;
+}
+
+.small-rounded {
+  border-radius: 4.2px;
+}
+
+.flexible {
+  display: flex;
+}
+
+.flex-y {
+  flex-direction: column;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.gapped {
+  column-gap: 0.11em;
+}
+
+.blurred {
+  filter: blur(0.6px);
+}
+
+/* Container */
+.container {
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(184, 174, 246, 0.667);
+}
+
+/* Icon */
+.container .icon-container {
+  height: 30%;
+}
+
+.container .piano .icon {
+  min-width: 45px;
+  max-width: 45px;
+  min-height: 45px;
+  max-height: 45px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  margin: 3vh 0 0 1.85em;
+}
+
+/* Piano */
+.container .piano {
+  width: 500px;
+  height: 250px;
+  background-color: rgba(32, 32, 32, 0.94);
+  box-shadow: 0 0 90px rgba(32, 32, 32, 0.94);
+}
+
+.container .piano .keys {
+  height: 70%;
+}
+
+.container .piano .keys .key {
+  width: 40px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.936);
+}
+
+.container .piano .keys .black-key::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 99px;
+  margin-left: 1.3em;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0 0 6px rgba(32, 32, 32, 0.94);
+  border-radius: 0 0 4.2px 4.2px;
+}
+
+.container .piano .keys .key:hover {
+  background-color: rgba(255, 255, 255, 0.766);
+}
